@@ -6,6 +6,7 @@ const app = express()
 
 app.use(express.json())
 app.use(cors())
+app.use(express.static('build'))
 
 /* implement our own middleware that 
 prints information about every request that is sent to the server
